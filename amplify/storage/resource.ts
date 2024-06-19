@@ -13,10 +13,8 @@ export const storage = defineStorage({
 });
 
 
-export async function downloadKatalog(){
-    console.log('calling ... from downloadKatalog');
-    const result = await downloadData({
-      path: "UNILED_katalog_2024.pdf",
-    }).result;
-}
+export const downloadResult = await downloadData({
+    path: "UNILED_katalog_2024.pdf",
+  }).result;
 
+console.log('downloadResult is: ', downloadResult )
