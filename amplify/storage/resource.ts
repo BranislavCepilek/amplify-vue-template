@@ -14,7 +14,7 @@ export const storage = defineStorage({
 
 
 export const downloadResult = await downloadData({
-    path: "UNILED_katalog_2024.pdf",
+    path: "uniled-katalog/UNILED_katalog_2024.pdf",
   }).result;
 
 console.log('downloadResult is: ', downloadResult )
