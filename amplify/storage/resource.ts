@@ -1,4 +1,5 @@
 import { defineStorage } from "@aws-amplify/backend";
+import { downloadData } from "aws-amplify/storage";
 
 export const storage = defineStorage({
     name: 'amplifyUniledStorage',
@@ -10,3 +11,16 @@ export const storage = defineStorage({
         ]
     })
 });
+
+
+export async function downloadKatalog(){
+    console.log('calling ... from downloadKatalog');
+    const result = await downloadData({
+      path: "UNILED_katalog_2024.pdf",
+    }).result;
+}
+
+
+export const result = await downloadData({
+    path: "UNILED_katalog_2024.pdf",
+}).result;
