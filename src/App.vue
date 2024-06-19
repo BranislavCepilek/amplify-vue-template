@@ -10,7 +10,7 @@ const linkToStorageFile = await getUrl({
   options: {
     validateObjectExistence: false,
     expiresIn: 20,
-    useAccelerateEndpoint: true,
+    useAccelerateEndpoint: false,
   },
 });
 console.log('signed URL: ', linkToStorageFile.url);
