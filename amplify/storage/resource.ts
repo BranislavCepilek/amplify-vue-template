@@ -20,7 +20,3 @@ export async function downloadKatalog(){
     }).result;
 }
 
-
-export const result = await downloadData({
-    path: "UNILED_katalog_2024.pdf",
-}).result;
